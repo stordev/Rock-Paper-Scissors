@@ -1,0 +1,75 @@
+@import 'vars';
+
+.game {
+    &__rivals {
+        font-size: 40*$r;
+        column-gap: 30*$r;
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+
+        &-login {
+            min-width: 100*$r;
+            border-radius: 10*$r;
+            line-height: 50*$r;
+            text-align: center;
+            padding: 0 20*$r;
+        }
+
+        &-you {
+            color: #0f0;
+            background-color: #00f;
+
+            &:after {
+                font-size: 12*$r;
+                content: '👈';
+            }
+        }
+
+        &-opponent {
+            color: #ff0;
+            background-color: #f00;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__choice {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20*$r;
+        width: 500*$r;
+
+        &-btn {
+            font-weight: 500;
+            font-size: 16*$r;
+            min-width: 30%;
+            padding: 5*$r;
+            border-radius: 5*$r;
+            display: block;
+        }
+    }
+}
+
+:before {
+    display: block;
+    font-size: 40*$r;
+}
+
+#rock:before {
+    display: block;
+    content: '🤜';
+}
+
+#scissors:before {
+    content: '🤞';
+}
+
+#paper:before {
+    content: '✋';
+}
