@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.players {
+  border-collapse: collapse;
+  background-color: #000;
+  caret-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.players__header th {
+  padding: 0.3472222222vw 2.0833333333vw;
+  font-weight: bold;
+  letter-spacing: 0.0694444444vw;
+}
+.players__header th::after {
+  display: block;
+}
+.players__header .login:after {
+  content: "👤";
+}
+.players__header .papers:after {
+  content: "✋";
+}
+.players__header .rocks:after {
+  content: "🤜";
+}
+.players__header .scissors:after {
+  content: "🤞";
+}
+.players__header .wins:after {
+  content: "🎉";
+}
+.players__header .loses:after {
+  content: "🚫";
+}
+.players__body tr:hover {
+  background-color: #333;
+  box-shadow: 0 0 0.3472222222vw #fff;
+  cursor: pointer;
+}
+.players__body td {
+  min-width: 6.9444444444vw;
+  font-size: 1.25vw;
+  border-top: 1pt solid #888;
+  text-align: center;
+  vertical-align: middle;
+}
+.players__body td:first-child {
+  text-align: left;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1.3888888889vw;
+}
+.players__body td:first-child:not(.you) {
+  background-color: #008;
+}
+
+.you {
+  display: flex;
+  background-color: #334;
+  box-shadow: inset 0.2083333333vw 0 0vw #0f0, inset 0.3472222222vw 0 0 #ff0;
+}
+.you:after {
+  content: "👈";
+  margin: -0.1388888889vw 0 0 0.3472222222vw;
+}

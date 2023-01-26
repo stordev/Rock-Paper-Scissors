@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.game__rivals {
+  font-size: 2.7777777778vw;
+  -moz-column-gap: 2.0833333333vw;
+       column-gap: 2.0833333333vw;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.game__rivals-login {
+  min-width: 6.9444444444vw;
+  border-radius: 0.6944444444vw;
+  line-height: 3.4722222222vw;
+  text-align: center;
+  padding: 0 1.3888888889vw;
+}
+.game__rivals-you {
+  color: #0f0;
+  background-color: #00f;
+}
+.game__rivals-you:after {
+  font-size: 0.8333333333vw;
+  content: "👈";
+}
+.game__rivals-opponent {
+  color: #ff0;
+  background-color: #f00;
+}
+.game__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game__choice {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.3888888889vw;
+  width: 34.7222222222vw;
+}
+.game__choice-btn {
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  min-width: 30%;
+  padding: 0.3472222222vw;
+  border-radius: 0.3472222222vw;
+  display: block;
+}
+
+:before {
+  display: block;
+  font-size: 2.7777777778vw;
+}
+
+#rock:before {
+  display: block;
+  content: "🤜";
+}
+
+#scissors:before {
+  content: "🤞";
+}
+
+#paper:before {
+  content: "✋";
+}
